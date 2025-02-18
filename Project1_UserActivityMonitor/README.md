@@ -70,6 +70,7 @@ Add the following line to execute the script every hour:
 ```
 
 Cron Timing Breakdown
+```sql
 ┌──────── minute (0 - 59)
 │ ┌────── hour (0 - 23)  → 10 means 10 AM
 │ │ ┌──── day of month (1 - 31)
@@ -77,7 +78,7 @@ Cron Timing Breakdown
 │ │ │ │ ┌ day of week (0 - 7) (Sunday = 0 or 7)
 │ │ │ │ │
 0 10 * * * /path/to/active_user.sh
-
+```
 ### Save the Output to a Log File (For Debugging)
 0 10 * * * /path/to/script.sh >> /path/to/cron.log 2>&1
 
